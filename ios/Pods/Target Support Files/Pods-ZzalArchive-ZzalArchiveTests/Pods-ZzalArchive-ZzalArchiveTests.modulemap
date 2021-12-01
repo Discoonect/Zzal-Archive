@@ -1,0 +1,6 @@
+module Pods_ZzalArchive_ZzalArchiveTests {
+  umbrella header "Pods-ZzalArchive-ZzalArchiveTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

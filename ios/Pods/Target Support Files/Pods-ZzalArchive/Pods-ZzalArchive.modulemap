@@ -1,0 +1,6 @@
+module Pods_ZzalArchive {
+  umbrella header "Pods-ZzalArchive-umbrella.h"
+
+  export *
+  module * { export * }
+}
