@@ -1,8 +1,10 @@
 import React from "react";
+import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Main from "../screen/Main";
+import { colors } from "../styles";
 
 const Stack = createStackNavigator();
 
@@ -25,7 +27,10 @@ const MainNav = () => {
       <Stack.Screen
         name="main"
         component={Main}
-        options={{ title: "짤 아카이브" }}
+        options={{
+          title: "짤 아카이브",
+          headerStyle: styles.header_style,
+        }}
       />
     </Stack.Navigator>
   );
@@ -37,3 +42,10 @@ const MyTheme = {
     background: "white",
   },
 };
+
+const styles = StyleSheet.create({
+  header_style: {
+    borderBottomWidth: 1,
+    borderBottomColor: colors.color_secondary_lightgray,
+  },
+});
